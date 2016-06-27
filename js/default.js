@@ -1,10 +1,19 @@
-var input=parseInt(window.prompt("ループ回数を入力してください"));
-var output="";
+ar li = document.createElement('li');
+li.textContent = 'アイテム';
+document.getElementById('list').appendChild(li);
+document.getElementById('choice').textContent = new Date();
 
-for(var i = 1; i < input; i++){
-  var li = document.createElement('li');
-  if( i % 15 == 0){
-    li.textContent = 'FizzBuzz';
-  }else if(i % 3 == 0){
-    li.textContent = 'Fizz';
-  }else if(i % 5 == 0
+var include_inNumber = function(price){
+  return Math.floor(price);
+}
+
+document.getElementById('FizzBuzz').onsubmit = function(){
+  window.alert(document.getElementById('FizzBuzz').word.value);
+};
+
+  for(var i = 1; i < 101; i++)
+  {
+    var li = document.createElement('li');
+    li.textContent = i ;
+    document.getElementById('FizzBuzz').appendChild(li);
+  }
